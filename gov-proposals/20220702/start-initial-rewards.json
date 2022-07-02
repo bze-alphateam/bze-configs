@@ -1,0 +1,27 @@
+{
+    "title": "Inflation Parameter Change - Let the Rewards begin",
+    "description": "The swap grace period is over, it's time to enable inflation so that onchain rewards begin.  This proposal is a signal to start our rewards and that most users have gone through the swap.\n  The following parameter changes in this proposal are:\n  Inflation Min:  5%\n Inflation Max 15%\n Goal Bonded: 25%\n Inflation Change Rate: 2.\n This values are temporary until we stop supporting the old chain and decide how many coins we will burn from the current 400M supply.\n  Vote Yes to pass these changes. \n No to reject the changes",
+    "changes": [
+      {
+        "subspace": "mint",
+        "key": "InflationMax",
+        "value": "0.150000000000000000"
+      },
+      {
+        "subspace": "mint",
+        "key": "InflationMin",
+        "value": "0.050000000000000000"
+      },
+      {
+        "subspace": "mint",
+        "key": "GoalBonded",
+        "value": "0.250000000000000000"
+      },
+      {
+        "subspace": "mint",
+        "key": "InflationRateChange",
+        "value": "0.100000000000000000"
+      }
+    ],
+    "deposit": "100000000000utbz"
+  }
