@@ -13,31 +13,31 @@ DATA_DIR="$HOME/.bze"
 if [ ! -d "$DATA_DIR" ] 
 then
     echo "Data directory does NOT EXIST! Change your data dir to the correct one." 
-    return 1
+    exit 1
 fi
 
 if [ ! -d "$DATA_DIR/data" ] 
 then
     echo "Data directory does NOT contain blockchain data." 
-    return 2
+    exit 2
 fi
 
 if [ ! -d "$DATA_DIR/config" ] 
 then
     echo "Data directory does NOT contain config directory." 
-    return 3
+    exit 3
 fi
 
 if [ ! -f "$DATA_DIR/config/config.toml" ] 
 then
     echo "Data directory does NOT contain config.toml file." 
-    return 4
+    exit 4
 fi
 
 if [ ! -f "$DATA_DIR/data/priv_validator_state.json" ] 
 then
     echo "Data directory does NOT contain priv_validator_state.json file!" 
-    return 5
+    exit 5
 fi
 
 # check
