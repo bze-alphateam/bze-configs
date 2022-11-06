@@ -2,13 +2,13 @@
 # It is recommended to have bash scripting experience to understand what this script does for you
 # Special thanks to our community member and validator MZONDER
 # request
-SNAP_RPC="https://rpc.getbze.com" # d-01 mz
+SNAP_RPC="https://rpc.getbze.com:443"
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height)
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 3000))
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
 
 #replace with your own data dir
-DATA_DIR="/home/bze/.bze"
+DATA_DIR="$HOME/.bze"
 
 if [ ! -d "$DATA_DIR" ] 
 then
@@ -49,11 +49,12 @@ echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH
 
 # reset state
 echo "Preparing to stop and delete node data"
-sudo systemctl stop bzed
-cp $DATA_DIR/data/priv_validator_state.json $DATA_DIR/
-rm -rf $DATA_DIR/data/*
-mv $DATA_DIR/priv_validator_state.json $DATA_DIR/data/
-sleep 5
+sudo systemctl stop bzed && bzed tendermint unsafe-reset-all --home $DATA_DIR
+
+#cp $DATA_DIR/data/priv_validator_state.json $DATA_DIR/
+#rm -rf $DATA_DIR/data/*
+#mv $DATA_DIR/priv_validator_state.json $DATA_DIR/data/
+#sleep 5
 echo "Stopped! Deleted blockchain data."
 
 #add peer a9fac0534bd6853f5810fdc692564967bd01b1fe@144.91.122.246:26656
