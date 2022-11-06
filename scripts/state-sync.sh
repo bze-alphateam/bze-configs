@@ -49,7 +49,7 @@ echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH
 
 # reset state
 echo "Preparing to stop and delete node data"
-sudo systemctl stop bzed && bzed tendermint unsafe-reset-all --home $DATA_DIR
+sudo systemctl stop bzed && bzed tendermint unsafe-reset-all --home $DATA_DIR --keep-addr-book
 
 #cp $DATA_DIR/data/priv_validator_state.json $DATA_DIR/
 #rm -rf $DATA_DIR/data/*
