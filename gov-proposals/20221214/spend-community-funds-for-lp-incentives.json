@@ -1,7 +1,7 @@
 {
     "title": "Fund Osmosis pool incentives",
     "description": "This proposal is for funding the Osmosis (BZE/OSMO) liquidity pool incentives. \\n\\n We are using the funds to reward liquidity providers for 350 days.\\n\\n Rewards distribution amongst 350 days:\\n\\n 7 days - 3,500,000 BZE\\n\\n 14 days - 5,000,000BZE",
-    "recipient": "bze1gv2al7mxrwyw4mgqzrne8nu3v4zghlvsysj4gl",
+    "recipient": "bze1z3mkcr2jz424w6m49frgjmy9uhlrx69phqwg3l",
     "amount": "8500000000000ubze",
     "deposit": "100000000000ubze"
-  }
+}
