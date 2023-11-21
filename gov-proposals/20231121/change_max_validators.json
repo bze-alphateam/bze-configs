@@ -1,0 +1,12 @@
+{
+  "title": "Change maximum number of validators to 40",
+  "description": "If this proposal passes the max nimber of validators on BZE network will be lowered from 195 to 40. This modification is needed to make sure we always have more trusted validators than unknown ones",
+  "changes": [
+    {
+      "subspace": "staking",
+      "key":"MaxValidators",
+      "value": 40
+    }
+  ],
+  "deposit": "100000000000ubze"
+}
