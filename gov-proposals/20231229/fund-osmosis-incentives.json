@@ -1,0 +1,6 @@
+{
+  "title": "Fund Osmosis pool incentives 2024",
+  "description": "This proposal is for funding the Osmosis (BZE/OSMO) liquidity pool incentives. We are using the funds to reward liquidity providers for 400 days. Rewards distribution amongst 400 days:\\n\\n 7 days - 4.8M BZE\\n\\n 14 days - 9.6M BZE",
+  "recipient": "bze1z3mkcr2jz424w6m49frgjmy9uhlrx69phqwg3l",
+  "amount": "14400000000000ubze"
+}
