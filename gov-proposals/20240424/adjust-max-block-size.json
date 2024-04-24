@@ -1,0 +1,14 @@
+{
+    "title": "Set Maximum Block Size to 3MB",
+    "description": "The block size should be increased to a value between 2MB and 5MB to better handle potential transaction spam on the network. This recommendation comes from the interchain security team, following various tests conducted on the Cosmos Hub testnet.",
+    "changes": [
+        {
+            "subspace": "baseapp",
+            "key": "BlockParams",
+            "value": {
+                "max_bytes": "3145728"
+            }
+        }
+    ],
+    "deposit": "100000000000ubze"
+}
