@@ -5,9 +5,7 @@
         {
             "subspace": "auth",
             "key": "TxSizeCostPerByte",
-            "value": {
-                "max_bytes": "150"
-            }
+            "value": "150"
         }
     ],
     "deposit": "100000000000ubze"
