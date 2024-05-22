@@ -1,0 +1,14 @@
+{
+    "title": "Increase TxSizeCostPerByte 15x",
+    "description": "This Proposal increases the cost of bytes to reduce the potential impact of spam. github.com/notional-labs/placid",
+    "changes": [
+        {
+            "subspace": "auth",
+            "key": "TxSizeCostPerByte",
+            "value": {
+                "max_bytes": "150"
+            }
+        }
+    ],
+    "deposit": "100000000000ubze"
+}
