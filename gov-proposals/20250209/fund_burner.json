@@ -1,0 +1,7 @@
+{
+  "title": "Fund burner module with 1M BZE",
+  "description": "If this proposal passed, the Burner module will be funded with 1M BZE from the Community Pool. Starting with BeeZee v7.2 the Burner module will burn all the coins he holds once every 4 weeks. Let's add 1M to its balance to make sure the fire burns a bigger pot when that time comes!",
+  "recipient": "bze1v7uw4xhrcv0vk7qp8jf9lu3hm5d8uu5yjp5qun",
+  "amount": "1000000000000ubze",
+  "deposit": "100000000000ubze"
+}
