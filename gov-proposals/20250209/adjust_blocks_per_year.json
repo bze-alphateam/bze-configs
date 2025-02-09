@@ -1,0 +1,12 @@
+{
+    "title": "Adjust blocks per year",
+    "description": "The average block time on BeeZee blockchain, calculated from the previous two years, is 5.7 seconds. We need to adjust the blocks_per_year parameter to reflect the number of yearly created blocks as accurate as we can, in order to have an accurate inflation. If this proposal passes, it will set the blocks_per_year parameter to 5543269",
+    "changes": [
+      {
+        "subspace": "mint",
+        "key": "BlocksPerYear",
+        "value": "5543269"
+      }
+    ],
+    "deposit": "100000000000ubze"
+  }
