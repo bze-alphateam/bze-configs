@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "genesis_url": "https://raw.githubusercontent.com/bze-alphateam/bze-configs/refs/heads/main/genesis/genesis-mainnet.json",
+  "config_toml_url": "https://raw.githubusercontent.com/.../config.toml",
+  "app_toml_url": "https://raw.githubusercontent.com/.../app.toml",
+  "chain_id": "beezee-1",
+  "state_sync_rpc_servers": [
+    "https://rpc.getbze.com:443",
+    "https://rpc2.getbze.com:443"
+  ],
+  "public_rest": "https://rest.getbze.com",
+  "public_rpc": "https://rpc.getbze.com",
+  "binary_repo": "bze-alphateam/bze",
+  "trust_height_offset": 3000,
+  "binaries": {
+    "darwin/amd64": "https://github.com/bze-alphateam/bze/releases/download/v8.0.0/bzed-darwin-amd64?checksum=sha256:e1150c9f68e39209475a15e05811fd703c4d6d62c186d54cb6cbef09f205b303",
+    "darwin/arm64": "https://github.com/bze-alphateam/bze/releases/download/v8.0.0/bzed-darwin-arm64?checksum=sha256:e4c3f486a46e7ecf370b7781b1663d87632ce7b994e443013307f02c5c0f5b61",
+    "linux/amd64": "https://github.com/bze-alphateam/bze/releases/download/v8.0.0/bzed-linux-amd64?checksum=sha256:1506e974d8015167b63af421b63fe282d93224d0ed4638998e5b2027ac49497e",
+    "linux/arm64": "https://github.com/bze-alphateam/bze/releases/download/v8.0.0/bzed-linux-arm64?checksum=sha256:81b947c25abdc8332e32c4d12fe7c5e6640598bf795a49b20f7cedd73a362379"
+  }
+}
