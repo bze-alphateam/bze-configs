@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "genesis_url": "https://raw.githubusercontent.com/bze-alphateam/bze-configs/refs/heads/main/genesis/genesis-mainnet.json",
+  "config_toml_url": "https://raw.githubusercontent.com/.../config.toml",
+  "app_toml_url": "https://raw.githubusercontent.com/.../app.toml",
+  "chain_id": "beezee-1",
+  "state_sync_rpc_servers": ["https://rpc.getbze.com:443", "https://rpc-1.getbze.com:443", "https://rpc-2.getbze.com:443"],
+  "public_rest": "https://rest.getbze.com",
+  "public_rpc": "https://rpc.getbze.com",
+  "binary_repo": "bze-alphateam/bze",
+  "trust_height_offset": 3000
+}
