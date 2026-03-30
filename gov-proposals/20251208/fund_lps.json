@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "recipient": "bze1jx4x3kn8mlz2s03zdpf2a38x9gl66llvjqdd55",
+      "amount": [
+        {
+          "denom": "ubze",
+          "amount": "3000000000000"
+        }
+      ],
+      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
+      "authority": "bze10d07y265gmmuvt4z0w9aw880jnsr700j8xlwyy"
+    }
+  ],
+  "title": "Fund Liquidity Pools",
+  "summary": "### Fund BZE Liquidity Pools\n\nIf this proposal passes, we will spend 3M BZE from the community pool to improve liquidity on BeeZee DEX.\n\n#### Funds usage\n- appx. 1,200,000 BZE will be paired with 2,000 USDC for BZE/USDC LP\n- 250,000 BZE will be added to BZE/VDL LP and the resulted shares will be locked forever\n- 250,000 BZE will be used for infrastructure costs\n- 500,000 BZE will be paid to BZE Alpha Team for the 2,000 USDC contribution to BZE/USDC LP. The entire amount will be staked.\n- The remaining amount (appx. 800,000 BZE) is a reserve of funds for immediate usage and will be used for the upcoming liquidity pools and monthly costs with the Community Team.\n",
+  "expedited": false,
+  "deposit": "10000000000ubze"
+}
