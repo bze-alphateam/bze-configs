@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "plan": {
+        "info": "{\"binaries\":{\"darwin/amd64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.1.1/bzed-darwin-amd64?checksum=sha256:7c52738fa984314d2004ca52ac897e17142af1993900f2df84c286d117cbcdbd\",\"darwin/arm64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.1.1/bzed-darwin-arm64?checksum=sha256:e49b9af02108097f65364592c2a2db7c2b4ca56bbc6f855295697bb31230f8a9\",\"linux/amd64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.1.1/bzed-linux-amd64?checksum=sha256:8b9b084cea168df60c028b1a80150bf7cfd3305c7a44e67a6283d33bcdb3dc57\",\"linux/arm64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.1.1/bzed-linux-arm64?checksum=sha256:e387743e726110039ff70df987ecfd962aecaadeb50e054847084a3c2acc8856\"},\"tag\":\"v8.1.1\"}",
+        "name": "v8.1.1",
+        "height": 23855000
+      },
+      "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+      "authority": "bze10d07y265gmmuvt4z0w9aw880jnsr700j8xlwyy"
+    }
+  ],
+  "title": "Upgrade network to v8.1.1",
+  "summary": "If passed, this proposal will upgrade the blockchain to version 8.1.1. This version bumps IBC and CometBFT dependencies and fixes a bug in LP creation.",
+  "expedited": false,
+  "deposit": "100000000ubze"
+}
