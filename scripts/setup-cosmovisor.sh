@@ -4,7 +4,10 @@
 
 # Set base directory
 BASE_DIR="$HOME/.bze/cosmovisor/upgrades"
-VERSIONS=("v5.1.2" "v6.0.0" "v6.1.0" "v7.0.0" "v7.1.0" "v7.1.1")
+# One entry per on-chain upgrade name (must match the `name` in the software-upgrade
+# proposal). Patch releases without an upgrade handler (e.g. v8.0.1, v8.0.2) are
+# intentionally absent: they run inside the range of the preceding upgrade.
+VERSIONS=("v5.1.2" "v6.0.0" "v6.1.0" "v7.0.0" "v7.1.0" "v7.1.1" "v7.2.0" "v8.0.0" "v8.1.0" "v8.1.1")
 
 # Create base directory if it doesn't exist
 mkdir -p "$BASE_DIR"
@@ -22,7 +25,10 @@ for version in "${VERSIONS[@]}"; do
 
   # Download the tar file
   echo "Downloading $URL..."
-  wget -q -P "$BIN_DIR" "$URL"
+  if ! wget -q -P "$BIN_DIR" "$URL"; then
+    echo "Failed to download $URL" >&2
+    exit 1
+  fi
 
   # Extract the tar file
   echo "Extracting $TAR_FILE in $BIN_DIR..."
