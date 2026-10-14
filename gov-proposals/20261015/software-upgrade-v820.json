@@ -4,7 +4,7 @@
       "plan": {
         "info": "{\"binaries\":{\"darwin/amd64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-darwin-amd64?checksum=sha256:TODO_SHA256_DARWIN_AMD64\",\"darwin/arm64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-darwin-arm64?checksum=sha256:TODO_SHA256_DARWIN_ARM64\",\"linux/amd64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-linux-amd64?checksum=sha256:TODO_SHA256_LINUX_AMD64\",\"linux/arm64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-linux-arm64?checksum=sha256:TODO_SHA256_LINUX_ARM64\"},\"tag\":\"v8.2.0\"}",
         "name": "v8.2.0",
-        "height": 25265000
+        "height": 25263600
       },
       "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
       "authority": "bze10d07y265gmmuvt4z0w9aw880jnsr700j8xlwyy"
