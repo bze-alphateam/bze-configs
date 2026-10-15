@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "plan": {
+        "info": "{\"binaries\":{\"darwin/amd64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-darwin-amd64?checksum=sha256:50994d6ea4946df4a47ec0b4ed3f7ba9f329ec33e6576cf9d3e335564c03a796\",\"darwin/arm64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-darwin-arm64?checksum=sha256:84b26516854034951cd49907bfc4d6b79b72d77d6bcd45a0f9991f6b8f0c4d2d\",\"linux/amd64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-linux-amd64?checksum=sha256:7c174a92b14b0353dabf6963b51aeac27fed6097f5113175a8202e7137919e7b\",\"linux/arm64\":\"https://github.com/bze-alphateam/bze/releases/download/v8.2.0/bzed-linux-arm64?checksum=sha256:00d8feedadbf2e355f792216981776d1de2a778b6f7a2cd5b59b7e0c6d8173a4\"},\"tag\":\"v8.2.0\"}",
+        "name": "v8.2.0",
+        "height": 25263600
+      },
+      "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+      "authority": "bze10d07y265gmmuvt4z0w9aw880jnsr700j8xlwyy"
+    }
+  ],
+  "title": "Upgrade network to v8.2.0",
+  "summary": "If passed, this proposal will upgrade the blockchain to version 8.2.0. # v8.2.0 Upgrade Summary\n\nValidators must build with Go 1.26.x. Module migrations: rewards v4→v5 (Denom Rewards parameter defaults) and txfeecollector v2→v3 (empty inbound IBC block list); no store keys added or removed.\n\n## Highlights\n\n- **Denom Rewards**: anyone can create a reward that pays any token to the stakers of any token, with scheduled daily payouts and airdrops.\n- **TokenFactory**: denom branding (name, symbol, logo, links) managed by the denom admin, and renouncing denom admin rights.\n- **TradeBin**: governance can halt a denom, which makes it unswappable in every pool and route.\n- **Staking rewards**: a finished staking reward can be removed by anyone once all stakes have exited.\n- **TxFeeCollector**: `--gas auto` now works with `--gas-prices`, including non-native fee denoms.\n- **Dependencies**: CometBFT v0.38.26.\n\n## Noble USDC wind-down\n\nCircle is retiring USDC on Noble, so from 2027-01-12 the USDC.n vouchers on BeeZee lose their backing. At the upgrade height the chain stops accepting new inbound `uusdc` from Noble (exits stay open) and transfers the protocol-owned USDC.n/BZE liquidity-pool shares held by the burner black hole to the team's admin address `bze1jx4x3kn8mlz2s03zdpf2a38x9gl66llvjqdd55`, so that liquidity can be migrated to Injective-issued USDC (USDC.inj) and locked in the black hole again as a USDC.inj/BZE pool. Every other black-hole balance stays where it is.\n\n## Full Release Notes\n\nFull release notes: https://github.com/bze-alphateam/bze/releases/tag/v8.2.0",
+  "expedited": false,
+  "deposit": "100000000ubze"
+}
