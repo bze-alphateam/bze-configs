@@ -1,0 +1,41 @@
+{
+  "title": "Enable expedited governance proposals (set expedited minimum deposit to 500,000 BZE)",
+  "summary": "BeeZee governance has a faster lane for urgent proposals: a 1-day voting period with a 66.7% pass threshold. Since the v8.0.0 upgrade its minimum deposit has been set to a token that does not exist on BeeZee (a Cosmos SDK default left by the migration), so no expedited proposal could ever enter voting. This proposal sets the expedited minimum deposit to 500,000 BZE, five times the normal 100,000 BZE deposit, which is the standard ratio in the Cosmos SDK. No other governance parameter changes. The lane is meant for urgent actions such as halting trading of a token that lost its backing.",
+  "metadata": "",
+  "deposit": "100000000000ubze",
+  "expedited": false,
+  "messages": [
+    {
+      "@type": "/cosmos.gov.v1.MsgUpdateParams",
+      "authority": "bze10d07y265gmmuvt4z0w9aw880jnsr700j8xlwyy",
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "ubze",
+            "amount": "100000000000"
+          }
+        ],
+        "max_deposit_period": "172800s",
+        "voting_period": "432000s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "proposal_cancel_ratio": "0.500000000000000000",
+        "proposal_cancel_dest": "",
+        "expedited_voting_period": "86400s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "ubze",
+            "amount": "500000000000"
+          }
+        ],
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true,
+        "min_deposit_ratio": "0.010000000000000000"
+      }
+    }
+  ]
+}
